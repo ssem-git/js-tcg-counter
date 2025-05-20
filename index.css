@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  color: #374151;
+  font-family: inter, sans-serif;
+}
+
+body {
+  display: flex;
+  gap: 2rem;
+  background: #F3F4F6;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.counter-wrapper {
+  transition: box-shadow 1s;
+  width: 348px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0px 12px 0px #E5E7EB;
+}
+
+header {
+  transition: background 0.2s;
+  background: url("./img/neutral.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 2rem 2rem 0rem 2rem;
+
+  input {
+    border: none;
+    font-size: 2rem; 
+    width: 0;
+    min-width: 100%;
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255, 1);
+    text-align: center;
+    border-radius: 2rem 2rem 0rem 0rem;
+    transition: 0.2s;
+  }
+  input:focus {
+    outline-width: 0;
+    color: #9CA3AF;
+  }
+  input:hover {
+    color: #9CA3AF;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  background: linear-gradient(45deg, #111827, #1F2937);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 12px 0px #E5E7EB;
+  h2 {
+    font-family: "Roboto Mono";
+    margin: 0px;
+    color: #F9FAFB;
+    padding: 0px;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    display: none;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1rem;
+
+  div {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+button {
+  padding: 1rem 1.45rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold; 
+  text-align: center;
+}
+
+.damage button {
+  background: linear-gradient(-45deg, #EF4444 80%, #B91C1C 10%);
+  color: #FEE2E2;
+}
+
+.damage button:hover {
+  box-shadow:inset 0px 0px 0px 2px #EF4444;
+  color: #dc2626;
+}
+
+.life button {
+  background: linear-gradient(135deg, #34D399 80%, #10B981 10%);
+  color: #D1FAE5;
+}
+
+.life button:hover {
+  box-shadow:inset 0px 0px 0px 2px #34d399;
+  color: #10b981;
+}
+
+.life button, .damage button {
+  transition: 0.2s;
+}
+
+.life button:hover, .damage button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.losing {
+  background: url("./img/losing.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.winning {
+  background: url("./img/winning.jpeg");
+  background-size: cover;
+  background-position: center -50px;
+}
+
+.negative {
+  background: url("./img/negative.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.draw {
+  background: url("./img/draw.jpeg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.crown {
+  box-shadow: 0px 12px 0px #dbb42c;
+}
+
+.death {
+  background: #991B1B;
+
+  h2 {
+    font-size: 82px;
+  }
+  button {
+    background: #7F1D1D;
+    color: white;
+    display: inline;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+

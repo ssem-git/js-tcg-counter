@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agnostic TCG Tracker</title>
+    <link href="./index.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  <!-- PLAYER 1 -->
+  <div class="counter-wrapper" id="player1wrap">
+    <!-- Player Name -->
+    <header class="" id="player1status">
+      <input type="" name="" value="Player 1">
+    </header>
+    <!-- HP Display -->
+    <main>
+      <h2 id="player1hp">20</h2> 
+      <button type="" onclick="reset()">reset</button>
+    </main>
+    <!-- HP Adjusters -->
+    <footer>
+      <!-- Top Row -->
+      <div class="damage">
+        <img src="./img/skull.jpg" height="54px" width="48px" alt="">
+        <button type="" onclick="decrease(1, 'p1')">1</button>      
+        <button type="" onclick="decrease(2, 'p1')">2</button>      
+        <button type="" onclick="decrease(5, 'p1')">5</button>      
+      </div>
+      <!-- Bottom Row -->
+      <div class="life">
+        <img src="./img/hp.png" height="48px" alt="">
+        <button type="" onclick="increase(1, 'p1')">1</button>      
+        <button type="" onclick="increase(2, 'p1')">2</button>      
+        <button type="" onclick="increase(5, 'p1')">5</button>      
+      </div>
+    </footer>
+  </div>
+
+  <!-- PLAYER 2 -->
+  <div class="counter-wrapper" id="player2wrap">
+    <!-- Player Name -->
+    <header class="" id="player2status">
+      <input type="" name="" value="Player 2">
+    </header>
+    <!-- HP Display -->
+    <main>
+      <h2 id="player2hp">20</h2> 
+      <button type="" onclick="reset()">reset</button>
+    </main>
+    <!-- HP Adjusters -->
+    <footer>
+      <!-- Top Row -->
+      <div class="damage">
+        <img src="./img/skull.jpg" height="54px" width="48px" alt="">
+        <button type="" onclick="decrease(1, 'p2')">1</button>      
+        <button type="" onclick="decrease(2, 'p2')">2</button>      
+        <button type="" onclick="decrease(5, 'p2')">5</button>      
+      </div>
+      <!-- Bottom Row -->
+      <div class="life">
+        <img src="./img/hp.png" height="48px" alt="">
+        <button type="" onclick="increase(1, 'p2')">1</button>      
+        <button type="" onclick="increase(2, 'p2')">2</button>      
+        <button type="" onclick="increase(5, 'p2')">5</button>      
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
+<script src="./script.js"></script>
