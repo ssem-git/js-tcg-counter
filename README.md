@@ -8,5 +8,5 @@ A system agnostic hitpoint tracker for TCGs - all background placeholder images 
 - Leader highlight 
 
 <br/>
-<img src="https://files.catbox.moe/570d0h.png"/><br/>
+<img src="https://files.catbox.moe/bx2uuo.png"/><br/>
 
